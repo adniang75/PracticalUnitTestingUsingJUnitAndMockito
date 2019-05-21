@@ -12,9 +12,10 @@ import static junitparams.JUnitParamsRunner.$;
 @RunWith( JUnitParamsRunner.class )
 public class MoneyParameterizedSolution2Test {
 
+    @SuppressWarnings( "deprecation" )
     private static Object[] getMoney() {
         
-        $( 
+        return $( 
             $( 10, "USD" ),
             $( 20, "EUR" ),
             $( 30, "XOF" )
