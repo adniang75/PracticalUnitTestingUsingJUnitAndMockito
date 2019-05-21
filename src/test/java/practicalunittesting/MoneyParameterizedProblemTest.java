@@ -1,4 +1,4 @@
-package practicalunittest;
+package practicalunittesting;
 
 import org.junit.Test;
 
