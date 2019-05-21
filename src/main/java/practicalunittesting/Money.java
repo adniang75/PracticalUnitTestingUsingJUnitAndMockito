@@ -19,10 +19,10 @@ public class Money {
     }
     
     public boolean equals( Object anObject ) {
-        if ( anObject instaceof Money ) {
+        if ( anObject instanceof Money ) {
             Money money = (Money) anObject;
             return money.getCurrency().equals(this.getCurrency()) && ( money.getAmount() == this.getAmount() );
         }
         return false;
     }
-}
+}p
