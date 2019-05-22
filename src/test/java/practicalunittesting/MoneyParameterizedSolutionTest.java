@@ -11,6 +11,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith( JUnitParamsRunner.class )
 public class MoneyParameterizedSolutionTest {
 
+    @SuppressWarnings( "unused" )
     private static Object[] getMoney() {
         return new Object[] {
                 new Object[] { 10, "USD" },
