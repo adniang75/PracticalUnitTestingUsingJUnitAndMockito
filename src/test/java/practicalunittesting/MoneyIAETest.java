@@ -19,8 +19,8 @@ public class MoneyIAETest {
 
     @Test( expected = IllegalArgumentException.class )
     @Parameters( method = "getAmount" )
-    public void constructorShouldThrowIAEForInvalidAmount( int amount ) {
-        new Money( amount, VALID_CURRENCY );
+    public void constructorShouldThrowIAEForInvalidAmount( int invalidAmount ) {
+        new Money( invalidAmount, VALID_CURRENCY );
     }
 
     @SuppressWarnings( "unused" )
@@ -30,8 +30,8 @@ public class MoneyIAETest {
 
     @Test( expected = IllegalArgumentException.class )
     @Parameters( method = "getCurrency" )
-    public void constructorShouldThrowIAEForInvalidCurrency( String currency ) {
-        new Money( VALID_AMOUNT, currency );
+    public void constructorShouldThrowIAEForInvalidCurrency( String invalidcurrencyurrency ) {
+        new Money( VALID_AMOUNT, invalidcurrencyurrency );
     }
 
 }
