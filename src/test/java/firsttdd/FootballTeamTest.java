@@ -3,15 +3,26 @@ package firsttdd;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+import junitparams.JUnitParamsRunner;
+import junitparams.Parameters;
+
+@RunWith( JUnitParamsRunner.class )
 public class FootballTeamTest {
-    
-    private static final int THREE_GAMES_WON = 3;
+
+    @SuppressWarnings( "unused" )
+    private static Object[] getValueForConstructor() {
+        return new Object[] {
+                "3, 3", "5, 5", "10, 10"
+        };
+    }
 
     @Test
-    public void constructorShouldSetGamesWon() {
-        FootballTeam team = new FootballTeam( THREE_GAMES_WON );
-        assertEquals( "\n", THREE_GAMES_WON, team.getGamesWon() );
+    @Parameters( method = "getValueForConstructor" )
+    public void constructorShouldSetGamesWon( int expected, int actual ) {
+        FootballTeam team = new FootballTeam( actual );
+        assertEquals( "\n", expected, team.getGamesWon() );
     }
 
 }
