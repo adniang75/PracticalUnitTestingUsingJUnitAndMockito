@@ -24,6 +24,7 @@ public class Money {
         return this.currency;
     }
 
+    @Override
     public boolean equals( Object anObject ) {
         if ( anObject instanceof Money ) {
             Money money = (Money) anObject;
