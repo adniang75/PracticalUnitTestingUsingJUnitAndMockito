@@ -1,11 +1,11 @@
 package testdoubles;
 
-import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 
 public class RaceResultsService {
     
-    private Collection<Client> clients = new ArrayList<>();
+    private Collection<Client> clients = new HashSet<>();
     
     public void addSubscriber( Client client ) {
         clients.add( client );
