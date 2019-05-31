@@ -13,5 +13,9 @@ public class Phone {
     public boolean isMobile() {
         return this.mobile;
     }
+    
+    public String getNumber() {
+        return this.number;
+    }
 
 }
