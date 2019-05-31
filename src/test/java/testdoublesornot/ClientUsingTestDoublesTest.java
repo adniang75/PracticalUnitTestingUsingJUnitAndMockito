@@ -9,8 +9,8 @@ import org.junit.Test;
 
 public class ClientUsingTestDoublesTest {
 
-    final static Phone  MOBILE_PHONE     = mock( Phone.class );
-    final static Phone  STATIONARY_PHONE = mock( Phone.class );
+    static final Phone  MOBILE_PHONE     = mock( Phone.class );
+    static final Phone  STATIONARY_PHONE = mock( Phone.class );
 
     Client              client           = new Client();
 
